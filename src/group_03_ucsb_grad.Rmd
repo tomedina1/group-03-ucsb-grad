@@ -1,0 +1,14 @@
+---
+title: "Group 03 UCSB domestic grad enrollment"
+author: "Taylor Medina & Drew Andersen"
+date: "11/15/2021"
+output: html_document
+---
+
+```{r setup, include = TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+library(tidyverse)
+```
+
