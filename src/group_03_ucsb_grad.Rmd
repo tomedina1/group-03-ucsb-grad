@@ -28,5 +28,6 @@ ggplot(data = grad_data, aes(x = year_abbr, y = domestic_enrollment)) +
        title = "Domestic Graduate Enrollment at UCSB by Ethnicity") +
   theme_minimal()
 ```
+
 **Figure 1.** Graduate enrollment at University of California, Santa Barbara by ethnicity between the years 2008 - 2019. 
 
