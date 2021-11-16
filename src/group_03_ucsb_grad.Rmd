@@ -5,15 +5,18 @@ date: "11/15/2021"
 output: html_document
 ---
 
+This task uses data from the UCSB Office of Budget and Planning that contains information on the domestic graduate student enrollment profile, including information on ethnicity and the year enrolled. This collaborative task utilizes `geom_col()` to visualize the racial makeup of each incoming graduate student cohort from 2008-2019. 
+
+**Data:** UCSB domestic graduate enrollment (2008-2019). *UCSB Office of Budget and Planning*. https://bap.ucsb.edu/institutional.research/campus.profiles/
+
 ```{r setup, include = TRUE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
 library(here)
 library(tidyverse)
-library
 ```
 
-```{r}
+```{r, message = FALSE}
 grad_data <- read_csv(here("data", "ucsb_grad_data.csv"))
 ```
 
@@ -24,7 +27,6 @@ ggplot(data = grad_data, aes(x = year_abbr, y = domestic_enrollment)) +
        y = "domestic enrollment",
        title = "Domestic Graduate Enrollment at UCSB by Ethnicity") +
   theme_minimal()
-  
 ```
 **Figure 1.** Graduate enrollment at University of California, Santa Barbara by ethnicity between the years 2008 - 2019. 
 
