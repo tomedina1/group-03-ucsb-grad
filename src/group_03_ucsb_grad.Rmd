@@ -10,5 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(here)
 library(tidyverse)
+library
+```
+
+```{r}
+grad_data <- read_csv(here("data", "ucsb_grad_data.csv"))
 ```
 
